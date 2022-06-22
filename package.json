@@ -1,6 +1,11 @@
 {
+	"scripts": {
+		"build": "esbuild --bundle index.tsx --outdir=dist/js --minify --sourcemap",
+		"start": "pnpm build --servedir=dist"
+	},
 	"dependencies": {
-		"react": "^18.2.0"
+		"react": "^18.2.0",
+		"react-dom": "^18.2.0"
 	},
 	"devDependencies": {
 		"esbuild": "^0.14.47",
